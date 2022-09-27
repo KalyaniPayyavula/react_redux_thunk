@@ -1,4 +1,6 @@
+import PropTypes from "prop-types"
 import { styled } from "@mui/system"
+
 export const Row = ({children}) => {
     const RowStyle = styled('div')({
         display: "flex",
@@ -8,4 +10,8 @@ export const Row = ({children}) => {
     return(
         <RowStyle>{children}</RowStyle>
     )
+}
+
+Row.propTypes = {
+    children : PropTypes.element.isRequired   
 }

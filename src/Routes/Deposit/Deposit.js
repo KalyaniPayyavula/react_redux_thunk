@@ -17,11 +17,14 @@ export const Deposit = () =>{
     }
 
     return(
-        <Row>
+        <>
          <TextField label="deposit" value={val}  variant="outlined" onChange={(e) => setVal(e.target.value)}/>
-         <Button variant="contained" onClick={depositHandle}>+</Button>
-         <div>Your available balance is : {balance}</div>
-         <NavigateHomePage></NavigateHomePage>
-         </Row>
+            <Row>
+            <Button variant="contained" onClick={depositHandle}>+</Button>
+            <div>Your available balance is : {balance}</div>
+            <NavigateHomePage></NavigateHomePage>
+            </Row>
+         </>
+ 
     )
 }

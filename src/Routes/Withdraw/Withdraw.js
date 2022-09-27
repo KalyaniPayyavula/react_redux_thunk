@@ -16,18 +16,13 @@ export const Withdraw = () =>{
     setVal("")
   }
     return(
-        <Row>
-          <TextField 
-          label="withdrawl" 
-          value={val} type="number" 
-          variant="outlined" 
-          InputLabelProps={{
-            shrink: true,
-          }}
-          onChange={(e) => setVal(e.target.value)}/>
-          <Button variant="contained" onClick={withdrawHandle}>-</Button>
-          <div>Available balance is : {balance}</div>
-          <NavigateHomePage></NavigateHomePage>
-        </Row>       
+        <>
+            <TextField label="withdrawl" value={val} type="number" variant="outlined" onChange={(e) => setVal(e.target.value)}/>
+            <Row>
+            <Button variant="contained" onClick={withdrawHandle}>-</Button>
+            <div>Available balance is : {balance}</div>
+            <NavigateHomePage></NavigateHomePage>
+            </Row> 
+        </>      
     )
 }

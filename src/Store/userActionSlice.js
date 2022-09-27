@@ -7,9 +7,6 @@ export const UserActionSlice = createSlice({
     },
 
     reducers : {
-        // balance : (state) =>{
-        //     state.value = initialState.value
-        // },
         deposit : (state, action) =>{
             state.value += action.payload
         },
@@ -19,5 +16,5 @@ export const UserActionSlice = createSlice({
     }
 })
 
-export const {balance, deposit, withdrawl} = UserActionSlice.actions;
+export const {deposit, withdrawl} = UserActionSlice.actions;
 export default UserActionSlice.reducer;

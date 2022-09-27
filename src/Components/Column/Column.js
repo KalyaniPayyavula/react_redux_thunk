@@ -1,4 +1,6 @@
+import PropTypes  from "prop-types"
 import { styled } from "@mui/system"
+
 export const Column = ({children}) =>{
     const ColumnStyle = styled('div')({
         display : "flex",
@@ -9,4 +11,8 @@ export const Column = ({children}) =>{
     return(
         <ColumnStyle>{children}</ColumnStyle>
     )
+}
+
+Column.propTypes = {
+    children : PropTypes.element.isRequired  
 }

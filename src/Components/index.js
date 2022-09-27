@@ -1,5 +1,5 @@
 import { Column } from '../Components/Column/Column'
-import { Home } from '../Components/Home/Home'
+import { Home } from '../Routes/Home/Home'
 import { Deposit } from '../Routes/Deposit/Deposit'
 import { Withdraw } from '../Routes/Withdraw/Withdraw'
 import { Balance } from '../Routes/Balance/Balance'

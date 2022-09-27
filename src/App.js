@@ -1,6 +1,6 @@
 import {Home, Deposit, Withdraw, Balance} from '../src/Components/'
 import { createBrowserRouter, } from 'react-router-dom'
-import { Login } from './Login/Login';
+import { Login } from './Routes/Login/Login';
 
 const App = createBrowserRouter([
   {

@@ -1,5 +1,5 @@
 import TextField from '@mui/material/TextField';
-import { Column } from '../Components';
+import { Column } from '../../Components';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
