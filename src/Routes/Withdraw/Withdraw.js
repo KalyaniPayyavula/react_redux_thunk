@@ -1,9 +1,9 @@
-import { BackToHomePage, Row } from "../../Components"
+import { NavigateHomePage, Row } from "../../Components"
 import { useSelector, useDispatch } from "react-redux"
 import { TextField } from "@mui/material"
 import { useState } from "react"
 import Button from '@mui/material/Button';
-import { withdrawl } from '../userActionSlice'
+import { withdrawl } from '../../Store/userActionSlice'
 
 export const Withdraw = () =>{
   const [val, setVal] = useState()
@@ -17,10 +17,17 @@ export const Withdraw = () =>{
   }
     return(
         <Row>
-          <TextField label="withdrawl" value={val} type="number" variant="outlined" onChange={(e) => setVal(e.target.value)}/>
-          <div>Available balance is : {balance}</div>
+          <TextField 
+          label="withdrawl" 
+          value={val} type="number" 
+          variant="outlined" 
+          InputLabelProps={{
+            shrink: true,
+          }}
+          onChange={(e) => setVal(e.target.value)}/>
           <Button variant="contained" onClick={withdrawHandle}>-</Button>
-          <BackToHomePage></BackToHomePage>
+          <div>Available balance is : {balance}</div>
+          <NavigateHomePage></NavigateHomePage>
         </Row>       
     )
 }

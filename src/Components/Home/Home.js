@@ -2,18 +2,19 @@ import Button from '@mui/material/Button';
 import { useNavigate,NavLink } from 'react-router-dom';
 import { styled } from '@mui/system';
 
+export const HomeStyle = styled('div')({
+    display: "flex",
+    flexDirection: "row",
+    justifyContent:"space-around",
+    marginTop: "1%",
+    })
+
 export const Home = () =>{
 const navigate = useNavigate()
 const LogoutHandle = () =>{ 
     navigate('/')
 }
 
-const HomeStyle = styled('div')({
-display: "flex",
-flexDirection: "row",
-justifyContent:"space-around",
-marginTop: "1%",
-})
 const NavStyle = {
     textDecoration: "none",
     border: "2px solid black",
@@ -29,3 +30,4 @@ const NavStyle = {
        </HomeStyle>
     )
 }
+

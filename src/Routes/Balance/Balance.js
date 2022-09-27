@@ -1,4 +1,4 @@
-import { BackToHomePage, Row } from "../../Components"
+import { NavigateHomePage, Row } from "../../Components"
 import { useSelector } from 'react-redux'
 
 export const Balance = () =>{
@@ -6,7 +6,7 @@ export const Balance = () =>{
     return(
         <Row>
           <h2>Your available balance is : {balance}</h2>
-          <BackToHomePage></BackToHomePage>
+          <NavigateHomePage></NavigateHomePage>
         </Row>
         
     )

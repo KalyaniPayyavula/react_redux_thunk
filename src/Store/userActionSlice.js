@@ -7,9 +7,9 @@ export const UserActionSlice = createSlice({
     },
 
     reducers : {
-        balance : (state, action) =>{
-            state.value = action.payload
-        },
+        // balance : (state) =>{
+        //     state.value = initialState.value
+        // },
         deposit : (state, action) =>{
             state.value += action.payload
         },
