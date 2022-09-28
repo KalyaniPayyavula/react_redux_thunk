@@ -21,7 +21,7 @@ export const Withdraw = () =>{
             <Row>
             <Button variant="contained" onClick={withdrawHandle}>-</Button>
             <div>Available balance is : {balance}</div>
-            <NavigateHomePage></NavigateHomePage>
+            <NavigateHomePage label="Back To Home"></NavigateHomePage>
             </Row> 
         </>      
     )

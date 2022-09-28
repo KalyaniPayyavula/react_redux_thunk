@@ -6,7 +6,7 @@ export const Balance = () =>{
     return(
         <Row>
           <h2>Your available balance is : {balance}</h2>
-          <NavigateHomePage></NavigateHomePage>
+          <NavigateHomePage label="Back To Home"></NavigateHomePage>
         </Row>
         
     )

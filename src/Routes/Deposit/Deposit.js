@@ -22,7 +22,7 @@ export const Deposit = () =>{
             <Row>
             <Button variant="contained" onClick={depositHandle}>+</Button>
             <div>Your available balance is : {balance}</div>
-            <NavigateHomePage></NavigateHomePage>
+            <NavigateHomePage label="Back To Home"></NavigateHomePage>
             </Row>
          </>
  
