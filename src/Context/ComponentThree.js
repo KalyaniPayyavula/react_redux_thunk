@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { UserContext } from './ComponentOne'
+import { UserContext } from './Context'
 
 export const ComponentThree = () =>{
     const user = useContext(UserContext)

@@ -1,11 +1,11 @@
-import { createContext } from "react"
 import { ComponentTwo } from "./ComponentTwo"
+import { UserContext } from './Context'
 
-export const UserContext = createContext()
 export const ComponentOne = () =>{
+    const dataTobeShared = "I'm being shared"
     return(
         <>
-        <UserContext.Provider value="This is Kalyani">
+        <UserContext.Provider value={dataTobeShared}>
         <h1>Component One</h1>
         <ComponentTwo/>
         </UserContext.Provider>

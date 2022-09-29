@@ -13,5 +13,6 @@ export const Row = ({children, dataTestId}) => {
 }
 
 Row.propTypes = {
-    children : PropTypes.element.isRequired   
+    children : PropTypes.element.isRequired,
+    dataTestId : PropTypes.string.isRequired   
 }
