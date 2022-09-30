@@ -1,13 +1,27 @@
 import { ComponentTwo } from "./ComponentTwo";
 import { UserContext } from './Context';
-import { useState } from 'react';
+import { useReducer } from 'react';
+const initialState = 0
+const reducer = (state, action) =>{
+    switch(action){
+        case  "increment":
+            return state + 1
+        case "decrement":
+            return state - 1 
+            case "reset":
+            return initialState
+        default:
+            return state    
+    }
+}
 
 export const ComponentOne = () =>{
-    const [val, setVal] = useState("I'm being shared")
+    const [count, dispatch] = useReducer(reducer, initialState)
+
     return(
         <>
-        <UserContext.Provider value={{val, setVal}}>
-        <h1>Component One</h1>
+        <UserContext.Provider value={{countState: count, dispatchCount: dispatch}}>
+        <h1>Component One {count}</h1>
         <ComponentTwo/>
         </UserContext.Provider>
         </>
