@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
 import { ComponentOne } from '../../Context/ComponentOne';
-import { UserContextProvider } from '../../Context/Context'
+import { UserContextProvider } from '../../Context/Context';
 
 export const Login = () =>{
     const navigate = useNavigate()
@@ -25,7 +25,7 @@ export const Login = () =>{
          <ButtonStyle variant="contained" onClick={loginHandle}>Login</ButtonStyle>
         </Column>
         <ComponentOne/>
-        </UserContextProvider>
+       </UserContextProvider>
        </>
     )
 }
