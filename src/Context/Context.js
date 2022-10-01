@@ -1,2 +1,24 @@
-import { createContext } from "react"
+import { createContext, useReducer } from "react"
 export const UserContext = createContext()
+const initialState = 0;
+const reducer = (state, action) =>{
+switch(action){
+    case "increment":
+        return state + 1
+    case "decrement":
+        return state - 1
+    case "reset":
+        return initialState
+    default:
+         return state
+}
+}
+export const UserContextProvider = ({children}) =>{
+    const {count, dispatch} = useReducer(reducer, initialState)
+    const val = {setCount: count, setDispatch : dispatch}
+    return(
+    <UserContext.Provider value={val}>
+     {children}
+    </UserContext.Provider>
+    )
+}
