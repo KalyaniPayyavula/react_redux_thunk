@@ -17,13 +17,15 @@ export const Login = () =>{
     }
 
     return(
+        <>
         <UserContextProvider>
-        <Column>
+        <Column dataTestId='ColumnId'>
          <TextField id="username-id" label="Username" variant="standard" />
          <TextField id="password-id" label="Password" variant="standard" />
          <ButtonStyle variant="contained" onClick={loginHandle}>Login</ButtonStyle>
         </Column>
         <ComponentOne/>
        </UserContextProvider>
+       </>
     )
 }
