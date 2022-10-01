@@ -15,5 +15,5 @@ export const Column = ({children, dataTestId}) =>{
 
 Column.propTypes = {
     dataTestId: PropTypes.string.isRequired,
-    children : PropTypes.array.isRequired  
+    children : PropTypes.element.isRequired  
 }
