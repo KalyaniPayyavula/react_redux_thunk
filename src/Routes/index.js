@@ -1,7 +1,6 @@
-import { Balance } from "./Balance/Balance";
-import { Deposit } from './Deposit/Deposit';
-import { Home } from './Home/Home';
-import { Login } from "./Login/Login";
-import { Withdraw } from "./Withdraw/Withdraw";
+export { Balance } from "./Balance/Balance";
+export { Deposit } from './Deposit/Deposit';
+export { Home } from './Home/Home';
+export { Login } from "./Login/Login";
+export { Withdraw } from "./Withdraw/Withdraw";
 
-export { Balance, Deposit, Home, Login, Withdraw }

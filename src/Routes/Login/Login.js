@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
 import { ComponentOne } from '../../Context/ComponentOne';
+import { UserContextProvider } from '../../Context/Context';
+
 
 export const Login = () =>{
     const navigate = useNavigate()
@@ -14,15 +16,17 @@ export const Login = () =>{
     const loginHandle = () =>{
         navigate('/home')
     }
-
+    
     return(
         <>
+         <UserContextProvider>
         <Column>
          <TextField id="username-id" label="Username" variant="standard" />
          <TextField id="password-id" label="Password" variant="standard" />
          <ButtonStyle variant="contained" onClick={loginHandle}>Login</ButtonStyle>
         </Column>
         <ComponentOne/>
+       </UserContextProvider>
        </>
     )
 }
