@@ -16,11 +16,11 @@ test("Column component", () => {
 test("Snapshot for Column component", () => {
 	render(
 		<Column
-			children
+			children={<p>childOne</p>}
 			label="test"
 			dataTestId="test-column"
 		/>
 	);
 
-	expect(screen.getByTestId("test-column").textContent).toMatchObject;
+	expect(screen.getByTestId("test-column").textContent).toMatchSnapshot();
 });
