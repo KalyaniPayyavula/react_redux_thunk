@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Home, Deposit, Withdraw, Balance, Login } from "./Routes/";
 import { createBrowserRouter } from "react-router-dom";
 

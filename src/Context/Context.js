@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { createContext } from "react";
 import { useReducer } from "react";
 import { PropTypes } from "prop-types";

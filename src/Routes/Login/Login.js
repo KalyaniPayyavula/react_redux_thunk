@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import TextField from "@mui/material/TextField";
 import { Column } from "../../Components";
 import Button from "@mui/material/Button";

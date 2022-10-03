@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { ComponentThree } from "./ComponentThree";
 import { useContext } from "react";
 import { UserContext } from "./Context";

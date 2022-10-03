@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import Button from "@mui/material/Button";
 import { useNavigate, NavLink } from "react-router-dom";
 import { styled } from "@mui/system";

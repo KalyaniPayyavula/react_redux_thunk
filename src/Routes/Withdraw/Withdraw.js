@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { NavigateHomePage, Row } from "../../Components";
 import { useSelector, useDispatch } from "react-redux";
 import { TextField } from "@mui/material";

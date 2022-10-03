@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { PropTypes } from "prop-types";
