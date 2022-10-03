@@ -1,19 +1,20 @@
-import TextField from '@mui/material/TextField';
-import { Column } from '../../Components';
-import Button from '@mui/material/Button';
-import { styled } from '@mui/system';
-import { useNavigate } from 'react-router-dom';
-import { ComponentOne } from '../../Context/ComponentOne';
-import { UserContextProvider } from '../../Context/Context';
+/* eslint-disable react/react-in-jsx-scope */
+import TextField from "@mui/material/TextField";
+import { Column } from "../../Components";
+import Button from "@mui/material/Button";
+import { styled } from "@mui/system";
+import { useNavigate } from "react-router-dom";
+import { ComponentOne } from "../../Context/ComponentOne";
+import { UserContextProvider } from "../../Context/Context";
 
 export const Login = () => {
     const navigate = useNavigate();
     const ButtonStyle = styled(Button)({
-        marginTop: '7%',
+        marginTop: "7%",
     });
 
     const loginHandle = () => {
-        navigate('/home');
+        navigate("/home");
     };
 
     return (

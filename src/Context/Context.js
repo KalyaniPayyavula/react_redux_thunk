@@ -1,28 +1,31 @@
-import { createContext } from "react"
-import { useReducer } from 'react';
+/* eslint-disable react/react-in-jsx-scope */
+import { createContext } from "react";
+import { useReducer } from "react";
+import { PropTypes } from "prop-types";
 
-export const UserContext = createContext()
-const initialState = 0
-const reducer = (state, action) =>{
-    switch(action){
-        case  "increment":
-            return state + 1
+export const UserContext = createContext();
+const initialState = 0;
+const reducer = (state, action) => {
+    switch (action) {
+        case "increment":
+            return state + 1;
         case "decrement":
-            return state - 1 
-            case "reset":
-            return initialState
+            return state - 1;
+        case "reset":
+            return initialState;
         default:
-            return state    
+            return state;
     }
-}
+};
 
-export const UserContextProvider = ({children}) => {
-    const [count, dispatch] = useReducer(reducer, initialState)
-    const value = {countState: count, dispatchCount: dispatch}
-    return(
-        <UserContext.Provider value={value}>
-            {children}
-        </UserContext.Provider>
-    )
-}
+export const UserContextProvider = ({ children }) => {
+    const [count, dispatch] = useReducer(reducer, initialState);
+    const value = { countState: count, dispatchCount: dispatch };
+    return (
+        <UserContext.Provider value={value}>{children}</UserContext.Provider>
+    );
+};
 
+UserContextProvider.propTypes = {
+    children: PropTypes.element.isRequired,
+};
